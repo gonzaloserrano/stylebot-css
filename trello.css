@@ -1,0 +1,107 @@
+.list {
+    counter-increment: cards;
+    flex: 0 0 170px;
+}
+
+.list:first-child {
+    background: #93BED3;
+    flex: 0 0 250px;
+}
+
+.list:first-child .list-card {
+    background: #FFFEAC;
+}
+
+.list:first-child .list-card-title {
+    color: #555;
+    font-size: 1.05em;
+    font-weight: bold;
+}
+
+.list:nth-child(1) {
+    background: #c8e0e7;
+}
+
+.list:nth-child(2) {
+    background: #b7d5df;
+}
+
+.list:nth-child(3) {
+    background: #a5cbd8;
+}
+
+.list:nth-child(4) {
+    background: #93c1d0;
+}
+
+.list:nth-child(5) {
+    background: #81b7c8;
+}
+
+.list:nth-child(6) {
+    background: #6fadc1;
+}
+
+.list:nth-child(7) {
+    background: #5ea2b9;
+}
+
+.list:nth-last-child(3) {
+    background: #DAE7E4;
+    bottom: 0;
+    flex: 0 0 400px;
+    left: 265px;
+    position: absolute;
+    width: 850px;
+}
+
+.list:nth-last-child(3) .card-label-green {
+    counter-increment: done;
+}
+
+.list:nth-last-child(3) .list-card {
+    counter-increment: tasks;
+    float: left;
+    margin-right: 2px;
+    max-width: 1000px;
+    min-width: 50px;
+}
+
+.list:nth-last-child(3) .list-cards {
+    overflow-x: auto;
+}
+
+.list:nth-last-child(3) .list-header {
+    display: none;
+}
+
+.list:nth-last-child(3) .open-card-composer {
+    margin-left: 220px;
+    width: 100px;
+}
+
+.list:nth-last-child(3) .open-card-composer:before {
+    background: rgba(231, 231, 255, 0.65);
+    border: 1px solid #FEFEFE;
+    border-radius: 5px;
+    bottom: 5px;
+    clear: both;
+    color: #444;
+    content: "Week: " counter(done) " out of " counter(tasks) " tasks";
+    display: block;
+    font-size: 1.1em;
+    font-weight: bold;
+    left: -220px;
+    margin-left: 5px;
+    padding: 5px 10px 5px 10px;
+    position: absolute;
+    width: 180px;
+}
+
+.list:nth-last-child(5), .list:nth-last-child(4) {
+    flex: 0 0 250px;
+}
+
+body {
+    counter-reset: tasks done;
+}

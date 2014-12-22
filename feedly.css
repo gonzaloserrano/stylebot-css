@@ -1,0 +1,11 @@
+.pinable {
+    margin-top: 0;
+}
+
+.shareBarHolder, .epin, .pinImage {
+    display: none;
+}
+
+.u100Entry, .entryTitle {
+    margin-top: 0.5em;
+}
