@@ -1,0 +1,5 @@
+.st-grid .te-s {
+    background-color: rgba(255, 200, 200, 0.5);
+    border-left: 5px solid rgba(255, 200, 200, 1);
+    padding: 4px;
+}
